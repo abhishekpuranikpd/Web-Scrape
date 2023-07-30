@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#home">URL Scraper</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>  <li class="nav-item">
+            <a class="nav-link" href="img.html">Screenshots</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <header class="bg-light text-center py-5">
+    <h1>URL Scraper</h1>
+    <p class="tagline">Scrape web content easily!</p>
+  </header>
+  
+  <main>
+    <section id="home" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <input type="text" id="urlInput" class="form-control mb-3" placeholder="Enter URL">
+            <button onclick="scrapeUrl()" class="btn btn-primary">Scrape the Web</button>
+            <div id="scrapedContent"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="card shadow p-3 bg-light">
+          <div class="card-body">
+            <h2 class="card-title">About Us</h2>
+            <p class="card-text">
+              Web URL scraping is the process of extracting data from websites by programmatically accessing and parsing their HTML content. It involves sending HTTP requests to a specific URL, retrieving the HTML response, and then extracting the desired information from the HTML structure. URL scraping can be used to gather data such as text, images, links, or any other relevant content from web pages.
+
+This web page provides information about the purpose and background of the URL Scraper. It aims to give visitors a better understanding of what the tool does and its benefits. The About Us page will include a pop-up card that provides a brief description of web URL scraping, explaining how it can be used to extract data from websites efficiently. The content will highlight the advantages of URL scraping and its potential applications in various domains such as data analysis, research, and automation.
+             </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <h2>Contact Us</h2>
+  
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <h2>Contact Us</h2>
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="nameInput" class="form-label">Name</label>
+              <input type="text" class="form-control" id="nameInput" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="numberInput" class="form-label">Number</label>
+              <input type="tel" class="form-control" id="numberInput" placeholder="Enter your phone number" required>
+            </div>
+            <div class="mb-3">
+              <label for="suggestionInput" class="form-label">Suggestion</label>
+              <textarea class="form-control" id="suggestionInput" rows="5" placeholder="Enter your suggestion" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <div id="contactResponse" class="mt-3"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
